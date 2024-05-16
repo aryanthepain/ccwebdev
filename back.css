@@ -3,13 +3,15 @@ body {
     background-color:#f9f9f9;
     padding: 0%;
     margin: 0%;
-    padding-inline: 10px;
 }
 .rfloat{
     float: right;
 }
 .lfloat{
     float: left;
+}
+.dpadding{
+    padding-inline: 20px;
 }
 
 /* navigation */
@@ -22,6 +24,7 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    padding-right: -10px;
 }
 
 .hlist {
@@ -77,4 +80,30 @@ body {
 }
 .active.hlist a{
     color: white;
+}
+.htitle{
+    font-family: 'Times New Roman', Times, serif;
+    background: repeating-linear-gradient(-45deg in oklab, black, rgb(40, 40, 40) 100px);
+    color: white;
+    font-size: 350%;
+}
+.hsearch{
+    height: 100%;
+    width: 100%;
+}
+.hsrcbtn{
+    height: 46px;
+    background-color: white;
+    border: transparent;
+    transition: 0.3s;
+    padding: 10px;
+}
+.hsrcbtn:hover{
+    background-color: rgb(128, 128, 128);
+}
+.hsrchli:hover{
+    background-color: rgb(128, 128, 128);
+}
+.hsrchli{
+    margin: auto;
 }
