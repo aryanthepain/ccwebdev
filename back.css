@@ -14,6 +14,21 @@ body {
     padding-inline: 20px;
 }
 
+/* top logo */
+.htitle{
+    font-family: 'Times New Roman', Times, serif;
+    background: repeating-linear-gradient(-45deg in oklab, black, rgb(40, 40, 40) 100px);
+    color: white;
+    font-size: 350%;
+}
+.header{
+    position: sticky;
+    top: 0;
+}
+.hnav.dpadding{
+    background-color: white;
+}
+
 /* navigation */
 .hnavlist {
     list-style-type: none;
@@ -21,8 +36,6 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: white;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
     padding-right: -10px;
 }
@@ -81,12 +94,6 @@ body {
 .active.hlist a{
     color: white;
 }
-.htitle{
-    font-family: 'Times New Roman', Times, serif;
-    background: repeating-linear-gradient(-45deg in oklab, black, rgb(40, 40, 40) 100px);
-    color: white;
-    font-size: 350%;
-}
 .hsearch{
     height: 100%;
     width: 100%;
@@ -106,4 +113,10 @@ body {
 }
 .hsrchli{
     margin: auto;
+}
+
+/* top part */
+.top{
+    background-color: #eeeeee;
+    display: flow-root;
 }
