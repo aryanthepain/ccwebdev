@@ -1,34 +1,47 @@
 /* generals */
 body {
     background-color:white;
+    padding: 0%;
+    margin: 0%;
+    padding-inline: 10px;
+}
+.rfloat{
+    float: right;
+}
+.lfloat{
+    float: left;
 }
 
 /* navigation */
-ul {
+.hnavlist {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #38444d;
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
-li {
+.hlist {
     float: left;
 }
 
-li a, .dropbtn {
+.hlist a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+.hlist a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(128, 128, 128);
 }
 
-li.dropdown {
+.hlist.dropdown {
     display: inline-block;
 }
 
@@ -50,9 +63,18 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: rgb(128, 128, 128);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+#hfloat{
+    float: right;
+}
+.active.hlist{
+    background-color: black;
+}
+.active.hlist a{
+    color: white;
 }

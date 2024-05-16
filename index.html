@@ -10,14 +10,14 @@
     <header class="header">
         <div class="htitle">TheNewsHive</div>
         <div class="hnav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#world">World</a></li>
-                <li><a href="#business">Business</a></li>
-                <li><a href="#politics">Politics</a></li>
-                <li><a href="#entertainment">Entertainment</a></li>
-                <li class="dropdown">
+            <ul class="hnavlist">
+                <li class="active hlist"><a href="#home">Home</a></li>
+                <li class="hlist"><a href="#news">News</a></li>
+                <li class="hlist"><a href="#world">World</a></li>
+                <li class="hlist"><a href="#business">Business</a></li>
+                <li class="hlist"><a href="#politics">Politics</a></li>
+                <li class="hlist"><a href="#entertainment">Entertainment</a></li>
+                <li class="hlist dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Sports</a>
                     <div class="dropdown-content">
                         <a href="#">Cricket</a>
@@ -25,9 +25,26 @@
                         <a href="#">F1</a>
                     </div>
                 </li>
+                <li class="hlist" id="hfloat"><button><img src="" alt=""></button></li>
             </ul>
         </div>
     </header>
+
+    <div class="top">
+        <img src="" alt="" class="lfloat">
+        <p class="tnews lfloat">BREAKING NEWS</p>
+        <p class="ttext lfloat">Local coming back on street again after</p>
+        <img src="" alt="" class="rfloat">
+        <div class="rfloat"><p id="date"></p></div>
+    </div>
+    <script>
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const d = new Date();
+        let month = months[d.getMonth()];
+
+        let date= month + " " + d.getDate() + ", " + d.getFullYear();
+        document.getElementById("date").innerHTML = date;
+    </script>
     
 </body>
 </html>
