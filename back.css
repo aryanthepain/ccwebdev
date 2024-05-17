@@ -149,10 +149,10 @@ body {
 .main{
     display: grid;
     grid-template-columns: repeat(5, 19%);
-    grid-template-rows: repeat(2, 35%);
+    grid-template-rows: repeat(2, 48%);
     grid-gap: 1%;
     width: 94vw;
-    height: 50vw;
+    height: 30vw;
     overflow: hidden;
     padding-inline-start: 2%;
     margin-top: 3%;
@@ -233,4 +233,99 @@ body {
 }
 .extras--, .elogo, .edate{
     display: inline;
+    width: 100%;
+}
+.extras1{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 25px;
+    border-radius: 100px;
+    height: max-content;
+    margin-right: 5px;
+    padding-left: 2px;
+}
+.eatp{
+    display: inline-flex;
+    vertical-align: middle;
+    line-height: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    text-shadow: 0px 0px 20px black, 2px 2px 5px #000000, 
+    -0px -0px 5px #000000, 
+    0px -0px 5px #000000;
+    padding: 2px;
+    margin-block: 4px;
+}
+.edate{
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+}
+.exdate{
+    display: inline-flex;
+    vertical-align: middle;
+    line-height: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    text-shadow: 0px 0px 20px black, 
+    0px -0px 5px #000000;
+    padding: 2px;
+    margin-block: 4px;
+}
+.edatelogo{
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    text-shadow: 0px 0px 20px black, 
+    0px -0px 5px #000000;
+    padding-left: 2px;
+}
+.div--{
+    margin-top: auto;
+    transition: 0.2s;
+}
+.title--{
+    transition: 0.2s;
+}
+
+/* hover effects */
+.div1:hover{
+    grid-area: 1/1/3/3;
+    white-space: normal;
+    background-color: #00000027;
+    margin-top: 0;
+}
+.div1:hover .title1{
+    white-space: normal;
+}
+.div2:hover{
+    grid-area: 3/4/1/3;
+    white-space: normal;
+    background-color: #00000027;
+    margin-top: 0;
+}
+.div2:hover .title2{
+    white-space: normal;
+}
+.div3:hover{
+    white-space: normal;
+    background-color: #00000027;
+    margin-top: 0;
+}
+.div3:hover .title3{
+    white-space: normal;
+}
+.div4:hover{
+    white-space: normal;
+    background-color: #00000027;
+    margin-top: 0;
+}
+.div4:hover .title4{
+    white-space: normal;
 }
