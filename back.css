@@ -293,6 +293,9 @@ body {
 .title--{
     transition: 0.2s;
 }
+.title2{
+    font-size: 150%;
+}
 
 /* hover effects */
 .div1:hover{
@@ -300,6 +303,7 @@ body {
     white-space: normal;
     background-color: #00000027;
     margin-top: 0;
+    overflow: auto;
 }
 .div1:hover .title1{
     white-space: normal;
@@ -309,6 +313,7 @@ body {
     white-space: normal;
     background-color: #00000027;
     margin-top: 0;
+    overflow: auto;
 }
 .div2:hover .title2{
     white-space: normal;
@@ -317,6 +322,7 @@ body {
     white-space: normal;
     background-color: #00000027;
     margin-top: 0;
+    overflow: auto;
 }
 .div3:hover .title3{
     white-space: normal;
@@ -325,7 +331,52 @@ body {
     white-space: normal;
     background-color: #00000027;
     margin-top: 0;
+    overflow: auto;
 }
 .div4:hover .title4{
     white-space: normal;
+}
+
+/* side bar*/
+.slist{
+    display: flex;
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.slista{
+    float: none;
+    width: 50%;
+    padding-inline: 0;
+}
+a.slistaa{
+    width: 100%;
+    padding-inline: 0;
+}
+.sdiv--{
+    margin-block: 10px;
+    display: flex;
+    background-color: white;
+    border-radius: 13px;
+}
+.simg--{
+    width: 80px;
+    height: 80px;
+}
+.simgc--{
+    padding: 3px;
+    margin-right: 3px;
+}
+.stitle--, .side--{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sdatelogo{
+    filter: invert(0);
+}
+.sxdate{
+    color: black;
+    text-shadow: none;
+    padding-right: 4px;
 }
