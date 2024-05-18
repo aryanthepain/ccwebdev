@@ -22,7 +22,10 @@ const yrfn = async() =>{
             document.getElementById(id).innerText= "   " + data[n].author;
         }
         const pdate = (n, id) => {
-            document.getElementById(id).innerText= data[n].date;
+            const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var abcd = new Date(data[n].date);
+            var efgh= months[abcd.getMonth()] + ' ' + abcd.getDate() + ', ' + abcd.getFullYear();
+            document.getElementById(id).innerText= efgh;
         }
         ptitle(0, "maintitle1");
         ptitle(1, "maintitle2");
