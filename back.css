@@ -219,9 +219,15 @@ html{
 }
 
 .title1, .title2, .title3, .title4, .stitle--{
+    /* text-overflow: ellipsis; */
+    /* overflow: hidden; */
+    /* white-space: nowrap;  */
+    /* line-clamp: 1; */
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2; 
+    overflow: hidden; 
     text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;    
 }
 .title1, .title2, .title3, .title4{
     color: white;
@@ -310,6 +316,7 @@ html{
 }
 .title--{
     transition: 0.2s;
+    padding-bottom: 2px;
 }
 .title2{
     font-size: 150%;
@@ -322,9 +329,12 @@ html{
     background-color: #00000027;
     margin-top: 0;
     overflow: auto;
+
 }
 .div1:hover .title1{
     white-space: normal;
+    display: block;
+    -webkit-line-clamp: none; 
 }
 div.img1, div.img2, div.img3, div.img4{
     z-index: 1;
@@ -352,6 +362,8 @@ div.img2:hover + .div2{
 }
 .div2:hover .title2{
     white-space: normal;
+    display: block;
+    -webkit-line-clamp: none; 
 }
 div.img3:hover + .div3{
     white-space: normal;
@@ -367,6 +379,8 @@ div.img3:hover + .div3{
 }
 .div3:hover .title3{
     white-space: normal;
+    display: block;
+    -webkit-line-clamp: none; 
 }
 .div4:hover{
     white-space: normal;
@@ -382,6 +396,8 @@ div.img4:hover + .img4{
 }
 .div4:hover .title4{
     white-space: normal;
+    display: block;
+    -webkit-line-clamp: none; 
 }
 
 /* side bar*/
@@ -428,6 +444,7 @@ a.slistaa{
     color: black;
     text-shadow: none;
     padding-right: 0px;
+
 }
 #maindate1, #maindate2, #maindate3, #maindate4{
     color: white;
