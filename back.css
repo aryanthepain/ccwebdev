@@ -259,7 +259,7 @@ html{
 .logo{
     width: 25px;
     border-radius: 100px;
-    height: max-content;
+    height: 25px;
     margin-right: 5px;
     padding-left: 2px;
 }
