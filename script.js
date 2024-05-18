@@ -16,7 +16,7 @@ const yrfn = async() =>{
             document.getElementById(id).innerText= data[n].type;
         }
         const ptitle = (n, id) => {
-            document.getElementById(id).innerText= data[n].headline;
+            document.getElementById(id).innerText= data[n].headline + "-\n\n" + data[n].content;
         }
         const pauthor = (n, id) => {
             document.getElementById(id).innerText= "   " + data[n].author;
