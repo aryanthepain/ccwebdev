@@ -229,6 +229,9 @@ html{
     overflow: hidden; 
     text-overflow: ellipsis;
 }
+.stitle--{
+    -webkit-line-clamp: 1; 
+}
 .title1, .title2, .title3, .title4{
     color: white;
     /* box-shadow: 6px 6px 20px black; */
