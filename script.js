@@ -23,9 +23,9 @@ const yrfn = async() =>{
         }
         const pdate = (n, id) => {
             const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-            var now = new Date(data[n].date);
-            var abcd= months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
-            document.getElementById(id).innerText= abcd;
+            var abcd = new Date(data[n].date);
+            var efgh= months[abcd.getMonth()] + ' ' + abcd.getDate() + ', ' + abcd.getFullYear();
+            document.getElementById(id).innerText= efgh;
         }
         ptitle(0, "maintitle1");
         ptitle(1, "maintitle2");
