@@ -3,6 +3,17 @@ body {
     background-color:#f9f9f9;
     padding: 0%;
     margin: 0%;
+    display: flex;
+    flex-flow: column;
+    max-height: 100vh;
+    max-width: 100vw;
+
+}
+html{
+    padding: 0;
+    margin: 0;
+    max-height: 100vh;
+    width: 100vw;
 }
 .rfloat{
     float: right;
@@ -24,6 +35,7 @@ body {
 .header{
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 .hnav.dpadding{
     background-color: white;
@@ -151,11 +163,16 @@ body {
     grid-template-columns: repeat(5, 19%);
     grid-template-rows: repeat(2, 48%);
     grid-gap: 1%;
-    width: 94vw;
-    height: 30vw;
+    width: 99%;
+    flex-grow: 1;
     overflow: hidden;
     padding-inline-start: 2%;
     margin-top: 3%;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+    padding-left: 1%;
+
 }
 .img1, .img2, .img3, .img4, .simg--{
     overflow: hidden;
@@ -380,9 +397,62 @@ a.slistaa{
 .sxdate{
     color: black;
     text-shadow: none;
-    padding-right: 4px;
+    padding-right: 0px;
+
 }
 #maindate1, #maindate2, #maindate3, #maindate4{
     color: white;
     text-shadow: 0 0 5px black, 0 0 5px black,0 0 5px black;
+}
+
+@media only screen and (max-width: 950px) {
+    html, body{
+        min-height: 100vh;
+        overflow: scroll;
+    }
+    body{
+        display: block;
+    }
+
+    .main{
+        grid-template-columns: repeat(3, 32.1%);
+        grid-template-rows: repeat(4, 200px);
+        margin-bottom: 20px;
+    }
+    .img3, .div3{
+        grid-area: 4/1/3/2;
+    }
+    .img4, .div4{
+        grid-area: 5/1/4/2;
+    }
+    .side{
+        grid-area: 3/2/5/4;
+    }
+}
+@media only screen and (max-width: 675px) {
+    #hfloat{
+        float: left;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .main{
+        grid-template-columns: repeat(2, 49%);
+        grid-template-rows: repeat(6, 200px);
+        margin-bottom: 20px;
+    }
+    .img2, .div2{
+        grid-area: 5/1/3/2;
+    }
+    .img3, .div3{
+        grid-area: 3/2/3/2;
+    }
+    .img4, .div4{
+        grid-area: 4/2/5/2;
+    }
+    .side{
+        grid-area: 5/1/7/3;
+    }
+    .header{
+        position: static;
+    }
 }
